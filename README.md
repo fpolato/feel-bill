@@ -5,11 +5,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installazione
 
-`npm install`
+Portarsi all'interno della cartella del progetto e lanciare il comando `npm install` che si occuperà di installare tutte le dipendenze
+
+### Moduli installati
 
 `npm install -g @angular/cli`
 
 `npm install --save @angular/material @angular/cdk @angular/animations`
+
+`yarn add @fortawesome/fontawesome-svg-core`
+
+`yarn add @fortawesome/free-solid-svg-icons`
+
+`yarn add @fortawesome/angular-fontawesome`
 
 ## Development server
 

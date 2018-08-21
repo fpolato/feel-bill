@@ -1,8 +1,9 @@
-<mat-toolbar>
-    <button mat-button>
-        <mat-icon>more_vert</mat-icon>
-        Crea Fattura
-    </button>
+<mat-toolbar class="mat-elevation-z6 toolbar-header">
+    <button mat-button>Crea Fattura</button>
     <button mat-button>Rubrica</button>
     <button mat-button>Archivio</button>
+    <span class="toolbar-spacer"></span>
+    <button mat-icon-button>
+        <fa-icon [icon]="['fas', 'user']" size="lg"></fa-icon>
+    </button>
 </mat-toolbar>
