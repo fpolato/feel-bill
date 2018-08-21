@@ -12,6 +12,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { PageviewerComponent } from "./pageviewer/pageviewer.component";
 import { CreaFatturaStepperComponent } from './crea-fattura-stepper/crea-fattura-stepper.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 library.add(fas);
 
@@ -33,7 +34,8 @@ library.add(fas);
     MatToolbarModule,
     MatStepperModule,
     LayoutModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
