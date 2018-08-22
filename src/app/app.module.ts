@@ -14,7 +14,7 @@ import {
   MatFormFieldModule, 
   MatInputModule,
   MatRadioModule,
-  MatNativeDateModule
+  MatNativeDateModule,
   MatDatepickerModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -28,6 +28,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { PageviewerRubricaComponent } from './pageviewer-rubrica/pageviewer-rubrica.component';
 import { PageviewerCreaFatturaComponent } from './pageviewer-crea-fattura/pageviewer-crea-fattura.component';
 import { PageviewerArchivioComponent } from './pageviewer-archivio/pageviewer-archivio.component';
+import { CreaFatturaIntestazioneComponent } from './crea-fattura-intestazione/crea-fattura-intestazione.component';
 
 library.add(fas);
 
@@ -39,7 +40,8 @@ library.add(fas);
     CreaFatturaStepperComponent,
     PageviewerRubricaComponent,
     PageviewerCreaFatturaComponent,
-    PageviewerArchivioComponent
+    PageviewerArchivioComponent,
+    CreaFatturaIntestazioneComponent
   ],
   imports: [
     BrowserModule,

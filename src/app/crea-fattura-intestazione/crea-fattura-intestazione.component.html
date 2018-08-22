@@ -1,0 +1,39 @@
+<mat-card class="crea-fattura-intestazione-form">
+  <mat-card-header>Dati Cliente</mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Ragione Sociale">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Indirizzo">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="P. IVA">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Email">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="crea-fattura-intestazione-form">
+  <mat-card-header>Dati Fattura</mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Numero Fattura">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Data">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-radio-group>
+        <mat-radio-button value="1">Nuova Fattura Precompilata</mat-radio-button>
+        <mat-radio-button value="2">Nuova Fattura Vuota</mat-radio-button>
+      </mat-radio-group>
+    </form>
+  </mat-card-content>
+</mat-card>
