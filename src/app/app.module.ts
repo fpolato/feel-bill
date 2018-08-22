@@ -13,6 +13,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { PageviewerComponent } from "./pageviewer/pageviewer.component";
 import { CreaFatturaStepperComponent } from './crea-fattura-stepper/crea-fattura-stepper.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { PageviewerRubricaComponent } from './pageviewer-rubrica/pageviewer-rubrica.component';
+import { PageviewerCreaFatturaComponent } from './pageviewer-crea-fattura/pageviewer-crea-fattura.component';
+import { PageviewerArchivioComponent } from './pageviewer-archivio/pageviewer-archivio.component';
 
 library.add(fas);
 
@@ -21,7 +24,10 @@ library.add(fas);
     AppComponent,
     ToolbarComponent,
     PageviewerComponent,
-    CreaFatturaStepperComponent
+    CreaFatturaStepperComponent,
+    PageviewerRubricaComponent,
+    PageviewerCreaFatturaComponent,
+    PageviewerArchivioComponent
   ],
   imports: [
     BrowserModule,

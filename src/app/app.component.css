@@ -6,7 +6,7 @@ app-toolbar {
     z-index: 2;
 }
 
-app-pageviewer {
+.router-content-wrapper {
     position: fixed;
     top: 64px;
     left: 0;
