@@ -29,6 +29,7 @@ import { PageviewerRubricaComponent } from './pageviewer-rubrica/pageviewer-rubr
 import { PageviewerCreaFatturaComponent } from './pageviewer-crea-fattura/pageviewer-crea-fattura.component';
 import { PageviewerArchivioComponent } from './pageviewer-archivio/pageviewer-archivio.component';
 import { CreaFatturaIntestazioneComponent } from './crea-fattura-intestazione/crea-fattura-intestazione.component';
+import { CreaFatturaProdottiComponent } from './crea-fattura-prodotti/crea-fattura-prodotti.component';
 
 library.add(fas);
 
@@ -41,7 +42,8 @@ library.add(fas);
     PageviewerRubricaComponent,
     PageviewerCreaFatturaComponent,
     PageviewerArchivioComponent,
-    CreaFatturaIntestazioneComponent
+    CreaFatturaIntestazioneComponent,
+    CreaFatturaProdottiComponent
   ],
   imports: [
     BrowserModule,
