@@ -3,8 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule } from '@angular/material';
-import { MatStepperModule } from '@angular/material/stepper';
+import { 
+  MatGridListModule,
+  MatCardModule, 
+  MatMenuModule, 
+  MatIconModule, 
+  MatButtonModule, 
+  MatToolbarModule, 
+  MatStepperModule,
+  MatFormFieldModule, 
+  MatInputModule,
+  MatRadioModule,
+  MatNativeDateModule
+  MatDatepickerModule
+} from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -39,6 +51,11 @@ library.add(fas);
     MatButtonModule,
     MatToolbarModule,
     MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
     LayoutModule,
     FontAwesomeModule,
     AppRoutingModule
