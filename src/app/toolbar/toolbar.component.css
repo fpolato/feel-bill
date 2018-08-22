@@ -1,3 +1,8 @@
+mat-toolbar {
+    background-color: #002884;
+    color: #ffffff;
+}
+
 .toolbar-logo {
     padding-right: 16px;
 }
