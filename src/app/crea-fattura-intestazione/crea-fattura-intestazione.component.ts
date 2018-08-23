@@ -12,7 +12,9 @@ export class CreaFatturaIntestazioneComponent implements OnInit {
 
   //fattura = new Fattura("A01", 1, 1, "2018-08-23", "Trattoria da Saverio", "Via Europa, 7, 35040, Sant'Urbano (PD)", "0123456789", "fabio.4f@gmail.com", "STD");
   fattura = new Fattura("A01", 1, 1, null, null, null, null, null, TipoFattura.PRE);
-
+  
+  submitted = false;
+  
   constructor() {
     let today = new Date();
     let dayString = (today.getDate() < 10) ? "0" + today.getDate() : today.getDate();
@@ -20,9 +22,13 @@ export class CreaFatturaIntestazioneComponent implements OnInit {
     let todayString = today.getFullYear() + "-" + monthString + "-" + dayString;
     this.fattura.data = todayString;
   }
-
+  
   ngOnInit() {
     
   }
-
+  
+  onSubmit() {
+    this.submitted = true;
+  }
+  
 }
