@@ -1,18 +1,18 @@
 <mat-card class="crea-fattura-intestazione-form">
   <mat-card-header>Dati Cliente</mat-card-header>
   <mat-card-content>
-    <form>
+    <form #datiClienteForm="ngForm">
       <mat-form-field>
-        <input matInput placeholder="Ragione Sociale">
+        <input matInput placeholder="Ragione Sociale" id="ragioneSociale" required [(ngModel)]="fattura.ragioneSociale" name="ragioneSociale" />
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Indirizzo">
+        <input matInput placeholder="Indirizzo" id="indirizzo" required [(ngModel)]="fattura.indirizzo" name="indirizzo" />
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="P. IVA">
+        <input matInput placeholder="P. IVA" id="piva" required [(ngModel)]="fattura.piva" name="piva" />
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Email">
+        <input matInput placeholder="Email" id="email" required [(ngModel)]="fattura.email" name="email" />
       </mat-form-field>
     </form>
   </mat-card-content>
@@ -21,18 +21,18 @@
 <mat-card class="crea-fattura-intestazione-form">
   <mat-card-header>Dati Fattura</mat-card-header>
   <mat-card-content>
-    <form>
+    <form #datiFatturaForm="ngForm">
       <mat-form-field>
-        <input matInput placeholder="Numero Fattura">
+        <input matInput placeholder="Numero Fattura" id="progressivo" required [(ngModel)]="fattura.progressivo" name="progressivo" />
       </mat-form-field>
       <mat-form-field>
-        <input matInput [matDatepicker]="picker" placeholder="Data">
+        <input matInput [matDatepicker]="picker" placeholder="Data" id="data" required [(ngModel)]="fattura.data" name="data" />
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
-      <mat-radio-group>
-        <mat-radio-button value="1">Nuova Fattura Precompilata</mat-radio-button>
-        <mat-radio-button value="2">Nuova Fattura Vuota</mat-radio-button>
+      <mat-radio-group required id="tipoFattura" [(ngModel)]="fattura.tipoFattura" name="tipoFattura">
+        <mat-radio-button value="PRE">Nuova Fattura Precompilata</mat-radio-button>
+        <mat-radio-button value="STD">Nuova Fattura Vuota</mat-radio-button>
       </mat-radio-group>
     </form>
   </mat-card-content>
