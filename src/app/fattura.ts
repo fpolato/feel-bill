@@ -1,4 +1,4 @@
-import { TipoFattura } from '../tipo-fattura';
+import { TipoFattura } from 'tipo-fattura';
 
 export class Fattura {
     constructor(
