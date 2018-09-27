@@ -1,0 +1,16 @@
+mat-card-content {
+    padding: 20px 10px;
+}
+
+mat-card-content div {
+    display: inline-block;
+}
+
+mat-card-content div.quantity,
+mat-card-content div.price {
+    width: 15%;
+}
+
+mat-card-content div.description {
+    width: 70%;
+}

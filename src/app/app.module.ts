@@ -16,7 +16,9 @@ import {
   MatInputModule,
   MatRadioModule,
   MatNativeDateModule,
-  MatDatepickerModule
+  MatDatepickerModule,
+  MatListModule,
+  MatDividerModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -62,6 +64,8 @@ library.add(fas);
     MatRadioModule,
     MatNativeDateModule,
     MatDatepickerModule,
+    MatListModule,
+    MatDividerModule,
     LayoutModule,
     FontAwesomeModule,
     AppRoutingModule
