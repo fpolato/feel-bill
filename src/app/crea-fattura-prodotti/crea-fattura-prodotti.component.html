@@ -1,9 +1,6 @@
 <mat-card class="crea-fattura-prodotti-card">
   <mat-card-header>
-      <button mat-button class="mat-elevation-z1">Primo</button>
-      <button mat-button class="mat-elevation-z1">Primo + Contorno</button>
-      <button mat-button class="mat-elevation-z1">Secondo + Contorno</button>
-      <button mat-button class="mat-elevation-z1">Completo</button>
+    <button mat-button class="mat-elevation-z1 precompiled-product" *ngFor="let precompiled of precompiledProducts">{{precompiled.description}}</button>
   </mat-card-header>
   <mat-card-content>
       <mat-list-item *ngFor="let product of products">
@@ -12,8 +9,14 @@
         <div class="price"><p mat-line>{{product.price * product.quantity}} €</p></div>
         <mat-divider></mat-divider>
       </mat-list-item>
+      <mat-list-item>
+          <div class="quantity"><h4 mat-line><input type="number" matInput placeholder="0"></h4></div>
+          <div class="description"><p mat-line><input type="string" matInput placeholder="Prodotto"></p></div>
+          <div class="price"><p mat-line><input type="number" matInput placeholder="0"> €</p></div>
+      </mat-list-item>
   </mat-card-content>
   <mat-card-footer>
-    Foot
+    <div class="total-label"><label>Total:</label></div>
+    <div class="total-value"><span>100</span>€</div>
   </mat-card-footer>
 </mat-card>

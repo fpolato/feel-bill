@@ -1,3 +1,16 @@
+/** Header **/
+mat-card-header {
+    min-height: 50px;
+    padding: 5px 3px;
+}
+
+button.precompiled-product {
+    display: inline-block;
+    height: 36px;
+    margin-right: 16px;
+}
+
+/** Content **/
 mat-card-content {
     padding: 20px 10px;
 }
@@ -13,4 +26,29 @@ mat-card-content div.price {
 
 mat-card-content div.description {
     width: 70%;
+}
+
+mat-card-content div.quantity input,
+mat-card-content div.price input {
+    max-width: 50px;
+}
+
+/** Footer **/
+mat-card-footer {
+    text-align: right;
+    padding: 0 40px;
+}
+mat-card-footer div {
+    display: inline-block;
+    min-height: 50px;
+    padding: 5px 3px;
+}
+
+mat-card-footer div.total-label label {
+    font-weight: bold;
+}
+
+mat-card-footer div.total-value {
+    width: 15%;
+    text-align: left;
 }
