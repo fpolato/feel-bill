@@ -4,15 +4,15 @@
   </mat-card-header>
   <mat-card-content>
       <mat-list-item *ngFor="let product of products">
-        <div class="quantity"><h4 mat-line>{{product.quantity}}</h4></div>
+        <div class="quantity"><input type="number" mat-input value="{{product.quantity}}"></div>
         <div class="description"><p mat-line>{{product.description}}</p></div>
-        <div class="price"><p mat-line>{{product.price * product.quantity}} €</p></div>
+        <div class="price">€<input type="number" mat-input value="{{product.price * product.quantity}}"></div>
         <mat-divider></mat-divider>
       </mat-list-item>
       <mat-list-item>
-          <div class="quantity"><h4 mat-line><input type="number" matInput placeholder="0"></h4></div>
-          <div class="description"><p mat-line><input type="string" matInput placeholder="Prodotto"></p></div>
-          <div class="price"><p mat-line><input type="number" matInput placeholder="0"> €</p></div>
+          <div class="quantity"><input type="number" matInput placeholder="0"></div>
+          <div class="description"><input type="string" matInput placeholder="Prodotto"></div>
+          <div class="price">€<input type="number" matInput placeholder="0"></div>
       </mat-list-item>
   </mat-card-content>
   <mat-card-footer>
