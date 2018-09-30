@@ -9,16 +9,9 @@ export class Fattura {
         private _ragioneSociale?: string,
         private _indirizzo?: string,
         private _piva?: string,
-        private _email?: string,
-        private _tipoFattura?: TipoFattura
+        private _email?: string
     ) { }
-
-    public get tipoFattura(): TipoFattura {
-        return this._tipoFattura;
-    }
-    public set tipoFattura(value: TipoFattura) {
-        this._tipoFattura = value;
-    }
+    
     public get email(): string {
         return this._email;
     }

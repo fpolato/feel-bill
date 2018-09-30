@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Fattura } from '../fattura'
-import { TipoFattura } from '../tipo-fattura';
 
 @Component({
   selector: 'app-crea-fattura-intestazione',
@@ -11,7 +10,7 @@ import { TipoFattura } from '../tipo-fattura';
 export class CreaFatturaIntestazioneComponent implements OnInit {
 
   //fattura = new Fattura("A01", 1, 1, "2018-08-23", "Trattoria da Saverio", "Via Europa, 7, 35040, Sant'Urbano (PD)", "0123456789", "fabio.4f@gmail.com", "STD");
-  fattura = new Fattura("A01", 1, 1, null, null, null, null, null, TipoFattura.PRE);
+  fattura = new Fattura("A01", 1, 1, null, null, null, null, null);
   
   submitted = false;
   

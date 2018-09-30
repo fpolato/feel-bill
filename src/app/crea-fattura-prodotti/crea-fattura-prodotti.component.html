@@ -1,8 +1,9 @@
-<mat-card class="crea-fattura-prodotti-card">
-  <mat-card-header>
-    <button mat-button class="mat-elevation-z1 precompiled-product" *ngFor="let precompiled of precompiledProducts">{{precompiled.description}}</button>
-  </mat-card-header>
-  <mat-card-content>
+<!--
+  <mat-card class="crea-fattura-prodotti-card">
+    <mat-card-header>
+      <button mat-button class="mat-elevation-z1 precompiled-product" *ngFor="let precompiled of precompiledProducts">{{precompiled.description}}</button>
+    </mat-card-header>
+    <mat-card-content>
       <mat-list-item *ngFor="let product of products">
         <div class="quantity"><input type="number" mat-input value="{{product.quantity}}"></div>
         <div class="description"><p mat-line>{{product.description}}</p></div>
@@ -10,13 +11,39 @@
         <mat-divider></mat-divider>
       </mat-list-item>
       <mat-list-item>
-          <div class="quantity"><input type="number" matInput placeholder="0"></div>
-          <div class="description"><input type="string" matInput placeholder="Prodotto"></div>
-          <div class="price">€<input type="number" matInput placeholder="0"></div>
+        <div class="quantity"><input type="number" matInput placeholder="0"></div>
+        <div class="description"><input type="string" matInput placeholder="Prodotto"></div>
+        <div class="price">€<input type="number" matInput placeholder="0"></div>
       </mat-list-item>
-  </mat-card-content>
-  <mat-card-footer>
+    </mat-card-content>
+    <mat-card-footer>
+      <div class="total-label"><label>Total:</label></div>
+      <div class="total-value"><span>100</span>€</div>
+    </mat-card-footer>
+  </mat-card>
+-->
+<div class="fattura-prodotti">
+  <div class="fattura-prodotti-content">
+    <button mat-button class="mat-elevation-z1 precompiled-product" *ngFor="let precompiled of precompiledProducts">{{precompiled.description}}</button>
+  </div>
+</div>
+
+<div class="fattura-acquisti">
+  <div class="fattura-acquisti-content">
+    <mat-list-item *ngFor="let product of products">
+      <div class="quantity"><input type="number" mat-input value="{{product.quantity}}"></div>
+      <div class="description"><p mat-line>{{product.description}}</p></div>
+      <div class="price">€<input type="number" mat-input value="{{product.price * product.quantity}}"></div>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+    <mat-list-item>
+      <div class="quantity"><input type="number" matInput placeholder="0"></div>
+      <div class="description"><input type="string" matInput placeholder="Prodotto"></div>
+      <div class="price">€<input type="number" matInput placeholder="0"></div>
+    </mat-list-item>
+  </div>
+  <div class="fattura-acquisti-footer">
     <div class="total-label"><label>Total:</label></div>
     <div class="total-value"><span>100</span>€</div>
-  </mat-card-footer>
-</mat-card>
+  </div>
+</div>

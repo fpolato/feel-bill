@@ -1,54 +1,73 @@
-/** Header **/
-mat-card-header {
-    min-height: 50px;
-    padding: 5px 3px;
+.fattura-prodotti,
+.fattura-acquisti {
+    display: inline-block;
+    margin: 0 20px;
+    min-width: 200px;
+    min-height: 300px;
+    vertical-align: top;
+    margin-top: 16px;
 }
 
-button.precompiled-product {
+/** Prodotti ------------------------ **/
+.fattura-prodotti {
+    max-width: 345px;
+}
+
+.fattura-prodotti-content button.precompiled-product {
     display: inline-block;
     height: 36px;
     margin-right: 16px;
+    margin-top: 6px;
+    width: 155px;
+}
+
+/** Acquisti ------------------------ **/
+.fattura-acquisti {
+    width: calc(100% - 425px);
+    min-width: 550px;
+    /** border-left: 1px solid rgba(0,0,0,.12); */
 }
 
 /** Content **/
-mat-card-content {
+.fattura-acquisti .fattura-acquisti-content {
     padding: 20px 10px;
 }
 
-mat-card-content div {
+.fattura-acquisti .fattura-acquisti-content div {
     display: inline-block;
 }
 
-mat-card-content div.quantity,
-mat-card-content div.price {
+.fattura-acquisti .fattura-acquisti-content div.quantity,
+.fattura-acquisti .fattura-acquisti-content div.price {
     width: 15%;
 }
 
-mat-card-content div.description {
+.fattura-acquisti .fattura-acquisti-content div.description {
     width: 70%;
 }
 
-mat-card-content div.quantity input,
-mat-card-content div.price input {
+.fattura-acquisti .fattura-acquisti-content div.quantity input,
+.fattura-acquisti .fattura-acquisti-content div.price input {
     max-width: 50px;
 }
 
 /** Footer **/
-mat-card-footer {
+.fattura-acquisti .fattura-acquisti-footer {
     text-align: right;
     padding: 0 40px;
 }
-mat-card-footer div {
+
+.fattura-acquisti .fattura-acquisti-footer div {
     display: inline-block;
     min-height: 50px;
     padding: 5px 3px;
 }
 
-mat-card-footer div.total-label label {
+.fattura-acquisti .fattura-acquisti-footer div.total-label label {
     font-weight: bold;
 }
 
-mat-card-footer div.total-value {
+.fattura-acquisti .fattura-acquisti-footer div.total-value {
     width: 15%;
     text-align: left;
 }
