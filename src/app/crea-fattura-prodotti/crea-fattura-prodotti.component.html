@@ -33,17 +33,18 @@
     <mat-list-item *ngFor="let product of products">
       <div class="quantity"><input type="number" mat-input value="{{product.quantity}}"></div>
       <div class="description"><p mat-line>{{product.description}}</p></div>
-      <div class="price">€<input type="number" mat-input value="{{product.price * product.quantity}}"></div>
+      <div class="price">€ <input type="number" mat-input value="{{product.price * product.quantity}}"></div>
       <mat-divider></mat-divider>
     </mat-list-item>
     <mat-list-item>
-      <div class="quantity"><input type="number" matInput placeholder="0"></div>
-      <div class="description"><input type="string" matInput placeholder="Prodotto"></div>
-      <div class="price">€<input type="number" matInput placeholder="0"></div>
+      <div class="quantity"><input type="number" mat-input placeholder="0"></div>
+      <div class="description"><p mat-line><input type="string" mat-input placeholder="Prodotto"></p></div>
+      <div class="price">€ <input type="number" mat-input placeholder="0"></div>
+      <mat-divider></mat-divider>
     </mat-list-item>
   </div>
   <div class="fattura-acquisti-footer">
-    <div class="total-label"><label>Total:</label></div>
+    <div class="total-label"><label>Totale:</label></div>
     <div class="total-value"><span>100</span>€</div>
   </div>
 </div>
